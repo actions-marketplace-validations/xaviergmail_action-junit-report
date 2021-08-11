@@ -199,10 +199,12 @@ async function parseSuite(
             : `${testcase._attributes.name}`
         }
 
-        core.info(`${path}:${pos.line} | ${message.replace(/\n/g, ' ')}`)
+
+        const absPath = core.getInput('base_dir') + path
+        core.info(`${absPath}:${pos.line} | ${message.replace(/\n/g, ' ')}`)
 
         annotations.push({
-          path,
+          path: absPath,
           start_line: pos.line,
           end_line: pos.line,
           start_column: 0,

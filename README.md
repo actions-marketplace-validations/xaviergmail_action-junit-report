@@ -81,6 +81,7 @@ jobs:
 | `fail_on_failure` | Optional. Fail the build in case of a test failure.                                                                                                                |
 | `require_tests`   | Optional. Fail if no test are found..                                                                                                                              |
 | `summary       `  | Optional. Additional text to summary output                                                                                                                        |
+| `base_dir`        | Optional. Path relative to root of repisotiry to prepend to annotations to display properly in the GitHub UI.                                                      |
 
 ## Sample 🖥️
 
@@ -95,7 +96,7 @@ jobs:
 ## Contribute 🧬
 
 ```bash
-# Install the dependencies  
+# Install the dependencies
 $ npm install
 
 # Build the typescript and package it for distribution

@@ -38,6 +38,10 @@ inputs:
     description: 'Additional text to summary output'
     required: false
     default: ''
+  base_dir:
+    description: 'Base directory to prepend to file paths when creating annotations'
+    required: false
+    default: ''
 runs:
   using: 'node12'
   main: 'dist/index.js'
