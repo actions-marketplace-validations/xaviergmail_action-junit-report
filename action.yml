@@ -1,4 +1,4 @@
-name: 'JUnit Report Action'
+name: 'JUnit Report Action (FORK w/ base_dir)'
 description: 'Report JUnit test results as annotations on Github Pull Request [junit]'
 branding:
   icon: 'check-circle'
